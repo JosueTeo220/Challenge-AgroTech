@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin-bottom: 75px;
+}
+.imgStyle{
+    max-height: 560px;
+}
+.linkStyle{
+    align-items: center;
+    justify-content: right;
+}
+.linkStyle ul li a{
+    color: rgba(0, 0, 255, 0.685);
+    margin-right: 20px;
+}
+.linkStyle ul li a:hover{
+    color: blue;
+}
+.navStyle{
+    background-color: white;
+}
+.neophormContainer{
+    margin-top: 5em;
+    height: 10em;
+    border-radius: 50px;
+    background: #dfe1e1;
+    box-shadow:  32px 32px 65px #bebfbf, -32px -32px 65px #ffffff;
+}
+
+
