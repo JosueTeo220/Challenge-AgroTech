@@ -21,12 +21,11 @@ header{
 .navStyle{
     background-color: #fff
 }
-.neophormContainer{
-    margin-top: 5em;
-    height: 10em;
-    border-radius: 25px;
-    background: #ffffff;
-    box-shadow:  -5px 5px 21px #cccccc, 5px -5px 21px #ffffff;
+
+.carouselStyle{
+    border-radius: 20px;
+    max-height: 35em;
+    background-size: contain;
 }
 
 
