@@ -10,28 +10,29 @@ main{
 }
 @keyframes titleAnimation {
     from {
-        font-size: 10px;
-        color: #dcffbf;
+        font-weight: 200;
+        color: #edffdf;
     }
     to {
-        color: rgb(5, 228, 35);
+        
+        color: rgb(13, 190, 37);
     }
   }
 h1{
     font-family: 'Roboto', sans-serif;
-    color: rgb(5, 228, 35);
+    color: rgb(13, 190, 37);
 }
 #titleAgro{
    animation-name: titleAnimation;
    animation-duration: 4s;
-    color: rgb(5, 228, 35);
+    color: rgb(13, 190, 37);
 }
 .linkStyle{
     align-items: center;
     justify-content: right;
 }
 .linkStyle ul li a{
-    color: #9CF553;
+    color: #94e94f;
     margin-right: 20px;
 }
 .linkStyle ul li a:hover{
@@ -42,7 +43,7 @@ h1{
 }
 
 .carouselStyle{
-    max-height: 34em;
+    max-height: 46em;
     background-size: contain;
 }
 #imgStyle1{
