@@ -8,6 +8,7 @@ main{
     background-color: #e9e9e9;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 @keyframes titleAnimation {
     from {
         font-weight: 200;
@@ -43,16 +44,22 @@ h1{
 }
 
 .carouselStyle{
+    transition-duration: '2s';
     max-height: 46em;
     background-size: contain;
 }
 #imgStyle1{
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.400);
 }
 .focusText{
     font-family: 'Roboto', sans-serif;
     color: green;
+}
+#buttonLinkStyle{
+    background: #fff;
+    box-shadow:  5px 5px 14px #bababa,
+             -5px -5px 14px #d9d9d9;
 }
 #rodapeStyle{
     font-size: small;

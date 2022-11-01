@@ -24,13 +24,13 @@ function searchButtonClick()
 }
 function mouseenterImage1()
 {
-    tituloImage1.innerHTML = "Lorem Lorem Lorem Lorem"
-    boxImage1.style.boxShadow = '2px 2px 2px 2px rgba(0, 0, 0, 0.370)'
-    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.750)'
+    boxImage1.style.transitionDuration = '1s'
+    boxImage1.style.boxShadow = '2px 2px 10px 1px rgba(0, 0, 0, 0.780)'
+    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.780)'
 }
 function mouseleaveImage1()
 {
-    tituloImage1.innerHTML = "Titulo 2"
     boxImage1.style.boxShadow = ''
-    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.400)'
+    boxImage1.style.animationName = ''
+    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.350)'
 }
