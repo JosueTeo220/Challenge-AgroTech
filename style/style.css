@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');*{
     padding: 0;
     margin: 0;
 }
 main{
-    padding-top: 4em;
+    padding-top: 3em;
     background-color: #e9e9e9;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
+@keyframes titleAnimation {
+    from {
+        font-size: 10px;
+        color: #dcffbf;
+    }
+    to {
+        color: rgb(5, 228, 35);
+    }
+  }
 h1{
-    color: rgb(0, 236, 32);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(5, 228, 35);
 }
-
+#titleAgro{
+   animation-name: titleAnimation;
+   animation-duration: 4s;
+    color: rgb(5, 228, 35);
+}
 .linkStyle{
     align-items: center;
     justify-content: right;
@@ -37,7 +50,8 @@ h1{
     background-color: rgba(0, 0, 0, 0.400);
 }
 #rodapeStyle{
+    font-size: small;
     width: 100%;
-    height: 15em;
     background-color: rgb(0, 168, 22);
 }
+
