@@ -1,1 +1,1 @@
-// Foi adicionado animações para uma melhor experiencia do usuário no Site (keyframes)
+// Foi adicionado como extra animações para uma melhor experiencia do usuário no Site (keyframes)
