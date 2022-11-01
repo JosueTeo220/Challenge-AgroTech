@@ -50,9 +50,14 @@ h1{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.400);
 }
+.focusText{
+    font-family: 'Roboto', sans-serif;
+    color: green;
+}
 #rodapeStyle{
     font-size: small;
     width: 100%;
-    background-color: rgb(0, 168, 22);
+    background: rgb(118,185,64);
+    background: linear-gradient(0deg, rgba(118,185,64,1) 0%, rgba(74,156,7,1) 100%);
 }
 

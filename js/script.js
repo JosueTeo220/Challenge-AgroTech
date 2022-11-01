@@ -1,4 +1,4 @@
-console.log('ola mundo')
+console.log('testScript')
 var tituloImage1 = document.getElementById('imageTitle1')
 var textoImage1 = document.getElementById('imageLabel1')
 var tituloImage2 = document.getElementById('imageTitle2')
@@ -11,12 +11,26 @@ var entradaImagem3 = document.getElementById('imageEntry3')
 var boxImage1 = document.getElementById('imgStyle1')
 
 entradaImagem1.addEventListener('mouseenter', ()=>{
+    mouseenterImage1()
+})
+entradaImagem1.addEventListener('mouseleave', ()=>{
+    mouseleaveImage1()
+})
+function searchButtonClick()
+{
+    var buttonSearch = document.getElementById('searchInput')
+    buttonSearch.value = ''
+    console.log("testInput")
+}
+function mouseenterImage1()
+{
     tituloImage1.innerHTML = "Lorem Lorem Lorem Lorem"
     boxImage1.style.boxShadow = '2px 2px 2px 2px rgba(0, 0, 0, 0.370)'
     boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.750)'
-})
-entradaImagem1.addEventListener('mouseleave', ()=>{
+}
+function mouseleaveImage1()
+{
     tituloImage1.innerHTML = "Titulo 2"
     boxImage1.style.boxShadow = ''
     boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.400)'
-})
+}
