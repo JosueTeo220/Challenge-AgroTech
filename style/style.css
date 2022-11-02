@@ -9,22 +9,22 @@ main{
     padding-top: 3em;
     background-color: #e9e9e9;
     font-family: 'Roboto Condensed', sans-serif;
-    
 }
 
 h1{
     font-family: 'Roboto', sans-serif;
     color: rgb(13, 190, 37);
 }
-
+h5{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(13, 190, 37);
+}
 @keyframes titleAnimation {
     from {
-        font-weight: 200;
-        color: #edffdf;
+        opacity: 10%;
     }
     to {
-        
-        color: rgb(13, 190, 37);
+        opacity: 100%;
     }
 }
 @keyframes opacity{
@@ -35,7 +35,20 @@ h1{
         opacity: 100%;
     }
 }
+#logo{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/logo.jpg);
+    position: absolute;
+    display: flex;
+    border-radius: 80px;
+}
 #titleAgro{
+   animation-name: titleAnimation;
+   animation-duration: 6s;
+    color: #94e94f;
+}
+#titleAgro2{
    animation-name: titleAnimation;
    animation-duration: 6s;
     color: rgb(13, 190, 37);
@@ -44,7 +57,7 @@ h1{
     align-items: center;
     justify-content: right;
 }
-.linkStyle ul li a{
+.linkStyle ul li a{ 
     color: #94e94f;
     margin-right: 20px;
 }
@@ -78,5 +91,55 @@ h1{
     width: 100%;
     background: rgb(118,185,64);
     background: linear-gradient(0deg, rgba(118,185,64,1) 0%, rgba(74,156,7,1) 100%);
+}
+
+
+
+.dicas{
+    margin: 20px 23px 25px 13px;
+    border: 1px solid #377504;
+    padding: 5px;
+    width: 315px;
+    height: 320px;
+    display: inline-block;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+#imgPlantacao{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+.lojaPrincipal{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+
+#item01,#item02,#item03,#item04,#item05,#item06,
+#item07,#item08,#item09,#item10,#item11,#item12{
+    box-sizing: border-box;
+    display:inline-block ;
+    margin: 10px;
+    border:1px solid #377504;
+    width: 20%;
+    height: 450px;
+    align-content:space-around;
+}
+
+.precoInsumos{
+    color: #61c311;
+    font-size: 27px;
+    font-weight: bold;
+    width: 230px;
+    background-image: url('');
+    background-size: 21%;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-position-x: 175px;
 }
 

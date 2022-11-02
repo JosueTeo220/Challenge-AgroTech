@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge AgroTech</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header da Página -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navStyle">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse linkStyle"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link" href="lojaVirtual.html">Loja Virtual</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link" href="#">Dicas para Plantação</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <h1 class="h1 text-center mt-4">Dicas de plantio</h1>
+            <img src="images/imagem4.jpeg" alt="Agricultura tecnológica" id="imgPlantacao">
+            <div class="input-group mt-2">
+              <input type="text" class="form-control" id="searchInput" placeholder="Pesquise alguma dica para sua Plantação" aria-label="Pesquise o produto desejado" aria-describedby="button-addon2">
+              <button class="btn btn-success" type="button" onclick="searchButtonClick()" id="button-addon2">Pesquisar</button>
+            </div>
+            <div class="dicas">
+                <h2>Dica 1: Utilização eficaz de máquinas e insumos</h2>
+                <p>
+                    Para se fazer uma utilização eficaz das máquinas e insumos que serão necessários ao longo de todo o processo é importante sempre respeitar os estágios de crescimento (ciclo fenológico) da planta, uma vez que qualquer desvio nesta operação pode resultar em perdas que dificilmente serão corrigidas.
+                </p>
+            </div>
+            <div class="dicas">
+                <h2>Dica 2: Revisão pré-plantio de máquina</h2>
+                <p>
+                    Na sequência, é fundamental realizar a revisão de pré-plantio, na qual todas as partes da frota são analisadas. Dessa forma, no momento em se que inicia o processo, não haverá necessidade de a máquina parar para fazer manutenção, o que impacta diretamente na colheita.
+                </p>
+            </div>
+            <div class="dicas">
+                <h2>Dica 3: Monitoramento constante</h2>
+                <p>
+                    Também deve-se monitorar, constantemente, o clima e a capacidade de campo do solo para definir o momento exato para o melhor plantio. Como cada planta tem um ciclo diferente, plantar na época certa garante seu desenvolvimento correto e, consequentemente, produtividade maior.
+                </p>
+            </div>
+            <div class="dicas">
+                <h2>Dica 4: Gerenciamento de adubo e sementes</h2>
+                <p>
+                    Somando-se a isso, as janelas de plantio estão cada vez mais curtas, em decorrência das mudanças climáticas pelo país, que tornam a qualidade cada vez mais evidente. Dessa forma, o agricultor precisa gerenciar a distribuição correta de adubos e sementes no solo.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid" id="rodapeStyle">
+        <div class="row p-4">
+          <div class="col-4">
+            <ul class="d-flex">
+              <li class="nav">
+                <a class="nav-link text-white" href="index.html">Início</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link text-white" href="#">Atendimento</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link text-white" href="#">Sobre nós</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link text-white" href="lojaVirtual.html"
+                  >Loja Virtual</a
+                >
+              </li>
+              <li class="nav">
+                <a class="nav-link text-white" href="#">Dicas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

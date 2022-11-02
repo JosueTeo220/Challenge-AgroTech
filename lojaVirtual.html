@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge AgroTech/Loja Virtual</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Header da Página -->
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top navStyle">
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse linkStyle"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse linkStyle" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav">
                 <a class="nav-link" href="index.html">Início</a>
@@ -44,59 +27,219 @@
                 <a class="nav-link" href="lojaVirtual.html">Loja Virtual</a>
               </li>
               <li class="nav">
-                <a class="nav-link" href="#">Dicas para Plantação</a>
+                <a class="nav-link" href="dicasPlantacao.html">Dicas para Plantação</a>
               </li>
             </ul>
           </div>
         </div>
-        <hr />
+        <hr>
       </nav>
     </header>
-    <main>
+    <main class="mainLojaVirtual">
+      <h1 class="h1 text-center mt-4" id="h1Loja">Loja virtual</h1>
       
-      </div>
-        <div class="container-fluid bg-white mt-4 p-3 rounded-2">
+        <div class="container bg-white mt-4 p-3 rounded-2" id="headerLoja">
+          <div class="container-fluid mt-4 pb-4">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-success w-100 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Enviar um item
+                </button>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
             <div class="input-group">
                 <input type="text" class="form-control" id="searchInput" placeholder="Pesquise o produto desejado" aria-label="Pesquise o produto desejado" aria-describedby="button-addon2">
                 <button class="btn btn-success" type="button" onclick="searchButtonClick()" id="button-addon2">Pesquisar</button>
+            </div>
+            
+            <div class="lojaPrincipal">
+              <div class="row">
+                <div class="container-fluid col-md-3" id="item01">
+                  <h4 class="mt-2 text-center">HPE NitroSCa</h4>
+                  <img src="images/insumo1.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                  <p>
+                    <br>
+                    Tamanho: 40kg<br>
+                    Marca: Polli Fertilizantes <br>
+                    Modelo: Corretivo Especial
+                    <p class="precoInsumos fs-3">R$ 229,00</p>
+                  </p>
+                </div>
+                <div class="container-fluid col-md-3" id="item02">
+                  <h4 class="mt-2 text-center">BioAction Power</h4>
+                  <img src="images/insumo2.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                  <p>
+                    <br>
+                    Tamanho: 1,5L<br>
+                    Marca: Biosphera <br>
+                    Modelo: Inoculante
+                    <p class="precoInsumos">R$ 450,00</p>
+                  </p>
+                </div>
+              <div class="container col-sm-3" id="item03">
+                <h4 class="mt-2 text-center">Fertilizante AD-1000</h4>
+                <img src="images/insumo3.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 5kg<br>
+                  Marca: Linha Bruto <br>
+                  Modelo: Adjuvantes
+                  <p class="precoInsumos">R$ 221,00</p>
+                </p>
               </div>
+              <div class="container col-sm-3" id="item04">
+                <h4 class="mt-2 text-center">Enxofre puro 99%</h4>
+                <img src="images/insumo4.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 1kg<br>
+                  Marca: Linha Bruto <br>
+                  Modelo: Fertilizantes
+                  <p class="precoInsumos">R$ 229,00</p>
+                </p>
+              </div>
+              </div>
+              
+              <div class="container col-sm-12" id="item05">
+                <h4 class="mt-2 text-center">Rúcula Apreciatta</h4>
+                <img src="images/insumo5.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 100g<br>
+                  Marca: Sementes Feltrin<br>
+                  Modelo: Hortaliças
+                </p>
+                <p class="precoInsumos">R$ 36,00</p>
+              </div>
+              <div class="container col-sm-12" id="item06">
+                <h4 class="mt-2 text-center">Alecrim - Golden</h4>
+                <img src="images/insumo6.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 200mg<br>
+                  Marca: Sementes Feltrin <br>
+                  Modelo: Ervas
+                  <p class="precoInsumos">R$ 8,95</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item07">
+                <h4 class="mt-2 text-center">Cebolinha Natsuyo</h4>
+                <img src="images/insumo7.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 50g<br>
+                  Marca: TopSeed<br>
+                  Modelo: Hortaliças
+                  <p class="precoInsumos">R$ 78,00</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item08">
+                <h4 class="mt-2 text-center">Alface Stella - Golden</h4>
+                <img src="images/insumo8.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 5g<br>
+                  Marca: Sementes Feltrin<br>
+                  Modelo: Hortaliças
+                  <p class="precoInsumos">R$ 5,50</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item09">
+                <h4 class="mt-2 text-center">Inseticida Nocaute</h4>
+                <img src="images/insumo9.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 200mL<br>
+                  Marca: Quimiagri<br>
+                  Modelo: Inseticida
+                  <p class="precoInsumos">R$ 161,50</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item10">
+                <h4 class="mt-2 text-center">Prod. Natural Dead</h4>
+                <img src="images/insumo10.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 1L <br>
+                  Marca: Interfina <br>
+                  Modelo: Controle de Pragas
+                  <p class="precoInsumos">R$ 64,60</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item11">
+                <h4 class="mt-2 text-center">Rodilon Soft Bait</h4>
+                <img src="images/insumo11.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 200g<br>
+                  Marca: Bayer<br>
+                  Modelo: Raticida
+                  <p class="precoInsumos">R$ 29,00</p>
+                </p>
+              </div>
+              <div class="container col-sm-12" id="item12">
+                <h4 class="mt-2 text-center">Rhizobium Tropici</h4>
+                <img src="images/insumo12.png" class="img-thumbnail mt-2" alt="Insumo agrícola">
+                <p>
+                  <br>
+                  Tamanho: 1,5L<br>
+                  Marca: Biosphera<br>
+                  Modelo: Inoculantes
+                  <p class="precoInsumos">R$ 86,00</p>
+                </p>
+              </div>
+            </div>
         </div>
-
-    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Digite as informações do seu Item</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="inputGroupFile02" placeholder="Adicione uma Imagem">
+                </div>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Nome do produto" aria-label="Nome do produto" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Categoria</option>
+                    <option value="1">Insumos</option>
+                    <option value="2">Produtos de consumo</option>
+                    <option value="3">Equipamentos</option>
+                    <option value="3">Veículos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success" id="liveToastBtn" data-bs-dismiss="modal">Confirmar</button>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-success" id="liveToastBtn" data-bs-dismiss="modal">Confirmar</button>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Item enviado!</strong>
-          <small>A poucos minutos</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          O seu item foi enviado e já está disponível para compra!
-        </div>
-    </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">Item enviado!</strong>
+              <small>A poucos minutos</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              O seu item foi enviado e já está disponível para compra!
+            </div>
+        </div> 
     </main>
 
     <footer>
-      <div class="container-fluid align-bottom" id="rodapeStyle">
+      <div class="container-fluid" id="rodapeStyle">
         <div class="row p-4">
           <div class="col-4">
             <ul class="d-flex">
@@ -110,23 +253,17 @@
                 <a class="nav-link text-white" href="#">Sobre nós</a>
               </li>
               <li class="nav">
-                <a class="nav-link text-white" href="lojaVirtual.html"
-                  >Loja Virtual</a
-                >
+                <a class="nav-link text-white" href="lojaVirtual.html">Loja Virtual</a>
               </li>
               <li class="nav">
-                <a class="nav-link text-white" href="#">Dicas</a>
+                <a class="nav-link text-white" href="dicasPlantacao.html">Dicas</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>

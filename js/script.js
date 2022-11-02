@@ -1,14 +1,6 @@
 console.log('testScript')
-var tituloImage1 = document.getElementById('imageTitle1')
-var textoImage1 = document.getElementById('imageLabel1')
-var tituloImage2 = document.getElementById('imageTitle2')
-var textoImage2 = document.getElementById('imageLabel2')
-var tituloImage3 = document.getElementById('imageTitle3')
-var textoImage3 = document.getElementById('imageLabel3')
-var entradaImagem1 = document.getElementById('imageEntry1')
-var entradaImagem2 = document.getElementById('imageEntry2')
-var entradaImagem3 = document.getElementById('imageEntry3')
-var boxImage1 = document.getElementById('imgStyle1')
+var entradaImagem = document.getElementById('imageEntry')
+var boxImage = document.getElementById('imgStyle')
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
@@ -21,11 +13,11 @@ if (toastTrigger) {
     toast.show()
   })
 }
-entradaImagem1.addEventListener('mouseenter', ()=>{
-    mouseenterImage1()
+entradaImagem.addEventListener('mouseenter', ()=>{
+    mouseenterImage();
 })
-entradaImagem1.addEventListener('mouseleave', ()=>{
-    mouseleaveImage1()
+entradaImagem.addEventListener('mouseleave', ()=>{
+    mouseleaveImage();
 })
 function searchButtonClick()
 {
@@ -33,15 +25,15 @@ function searchButtonClick()
     buttonSearch.value = ''
     console.log("testInput")
 }
-function mouseenterImage1()
+function mouseenterImage()
 {
-    boxImage1.style.transitionDuration = '1s'
-    boxImage1.style.boxShadow = '2px 2px 10px 1px rgba(0, 0, 0, 0.780)'
-    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.780)'
+    boxImage.style.transitionDuration = '1s'
+    boxImage.style.boxShadow = '2px 2px 10px 1px rgba(0, 0, 0, 0.780)'
+    boxImage.style.backgroundColor = 'rgba(0, 0, 0, 0.780)'
 }
-function mouseleaveImage1()
+function mouseleaveImage()
 {
-    boxImage1.style.boxShadow = ''
-    boxImage1.style.animationName = ''
-    boxImage1.style.backgroundColor = 'rgba(0, 0, 0, 0.350)'
+    boxImage.style.boxShadow = ''
+    boxImage.style.animationName = ''
+    boxImage.style.backgroundColor = 'rgba(0, 0, 0, 0.350)'
 }
