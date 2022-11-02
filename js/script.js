@@ -9,7 +9,18 @@ var entradaImagem1 = document.getElementById('imageEntry1')
 var entradaImagem2 = document.getElementById('imageEntry2')
 var entradaImagem3 = document.getElementById('imageEntry3')
 var boxImage1 = document.getElementById('imgStyle1')
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
 entradaImagem1.addEventListener('mouseenter', ()=>{
     mouseenterImage1()
 })

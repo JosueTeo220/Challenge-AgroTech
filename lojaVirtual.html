@@ -37,12 +37,46 @@
       </nav>
     </header>
     <main>
+      
+      </div>
         <div class="container-fluid bg-white mt-4 p-3 rounded-2">
             <div class="input-group">
                 <input type="text" class="form-control" id="searchInput" placeholder="Pesquise o produto desejado" aria-label="Pesquise o produto desejado" aria-describedby="button-addon2">
                 <button class="btn btn-success" type="button" onclick="searchButtonClick()" id="button-addon2">Pesquisar</button>
               </div>
         </div>
+
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-success" id="liveToastBtn" data-bs-dismiss="modal">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Item enviado!</strong>
+          <small>A poucos minutos</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          O seu item foi enviado e já está disponível para compra!
+        </div>
+    </div>
     </main>
 
     <footer>
