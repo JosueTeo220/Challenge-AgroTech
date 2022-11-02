@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+*{
     padding: 0;
     margin: 0;
 }
+
 main{
     padding-top: 3em;
     background-color: #e9e9e9;
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 h1{
@@ -23,7 +26,15 @@ h1{
         
         color: rgb(13, 190, 37);
     }
-  }
+}
+@keyframes opacity{
+    from{
+        opacity: 73%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
 #titleAgro{
    animation-name: titleAnimation;
    animation-duration: 6s;
@@ -43,9 +54,9 @@ h1{
 .navStyle{
     background-color: #fff;
 }
-
 .carouselStyle{
-    transition-duration: '2s';
+    animation-name: opacity;
+    animation-duration: 3s;
     max-height: 46em;
     background-size: contain;
 }
