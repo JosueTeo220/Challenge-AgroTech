@@ -37,11 +37,11 @@ h5{
 }
 #logo{
     background-repeat: no-repeat;
-
-    height: 160px;
-    width: 160px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
     background-size: cover;
-    z-index: 2;
+    z-index: 1;
     background-image: url(images/logo.png);
     position: absolute;
 }
